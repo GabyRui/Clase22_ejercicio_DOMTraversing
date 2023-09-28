@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Qué es Dom Traversing?</h1>
+    <p> Es la acción de navegar la estructura del DOM de un sitio web, de tal forma que se pueda interactuar con los elementos HTML.
+    Cada elemento se representa de forma jerárquica como nodo en un árbol y el DOM TRAVERSING se utiliza en Javascript para acceder a elementos específicos.
+     </p>
+
+    <h1>¿Qué es htmlCollections y NodeList y que se recomienda hacer con ellos?</h1>
+
+    <p>
+    Son tipos de objetos que se utilizan en Javascript para mostrar colecciones de elementos del DOM de un sitio web. Ambos son para almacenar listas de nodos HTML.
+
+    <br>
+
+    HTML Collection: Colección de elementos HTML, y se actualiza automáticamente cuando se modifican elementos del DOM. Se utiliza la propiedad children. También, mediante un array.from, se puede acceder a los índices.
+    Se recomienda utilizarlo cuando se trabajo con elementos específicos del HTML, y cuando necesitamos que una colección se actualice automáticamente al cambiar el DOM.
+
+    <br>
+
+    Nodelist: Colección estática de nodos que no se actualiza cuando cambia el DOM. Se utilizan Child Nodes o querySelectorAll como métodos. También, se puede acceder mediante índices e iterando entre ellos.
+
+    Este objeto es más recomendable cuando usamos nodos, y cuando necesitamos que la lista sea estática. 
+    </p>
+    <h1>Principales metodos de dom traversing definicion y ejemplos.</h1>
+    <p>
+    Significa desplazarse alrededor de la estructura del DOM para manipular elementos HTML. Los métodos más comunes son los siguientes: <br>
+
+    -ChildNodes: Vuelve una lista todos los nodos del elementos. <br>
+    Ver ejemplo en Javascript.
+
+    <div id="content" class="content_div">
+        <h1 class="h1" id="text">Hi a todos</h1>
+        <h2>holi</h2>
+    </p>
+    <h1>Creación de 3 elementos (mediante javascript). Van agregar clase y id al elemento.</h1>
+
+    <!-- Elementos -->
+    <div id="content1" class="content1">
+        <h1 id="h1" class="h1New">Buen día</h1>
+        <img src="./images/images.jpeg" alt="" id="image" class="image">
+        <p id="parrafoNew" class="parrafoNew4">Hermoso día</p>
+    </div>
+
+    <h1>Definicion de un evento, y como es la estructura</h1>
+    <p>
+    Se refiere a la acción que ocurre en el programa, y como este detecta y responde a la misma. Son esenciales para la interacción de los usuarios en sitios web. Las acciones más comunes son: hacer click en un sition web, scrollear, o presionar teclas. <br>
+
+    La estructura es: <br>
+
+    -El elemento del evento. <br>
+    -Tipo de evento a realizar. <br>
+    -Callback a ejecutarse. <br>
+    <br>
+    La estructura en Javascript es la siguiente: <br>
+    </p>
+
+    <button id="buttonNew1">Ejemplo de evento</button>
+
+    <h1>Definición de evento click y ejemplo</h1>
+    <p>
+    El evento "click" es muy común en programación, y se centra en la acción de hacer click sobre un elemento en específico del sitio web.
+    Al hacer click, se activan funciones que están relacionadas con el evento.
+    Son muy utilizados en la programación para generar interacciones más dinámicas por parte del usuario al utilizar el sitio web. Se utiliza la función addEventListener, y con ello se define el comportamiento que deberá generar una vez el usuario haga click en el elemento. <br>
+
+    La estructura es la siguiente: <br>
+    <button id="buttonNew">Ejemplo de click</button>
+          
+    </p>
+
+    <h1>Definicion de vento scroll y ejemplo</h1>
+    <p>
+    Scroll, que significa desplazamiento, hace referencia a un evento que se genera cuando un usuario realiza un desplazamiento en el sitio web, ya sea horizontal o vertical.
+    Permite detectar cuando el usuario está navegando y permite crear efectos visuales según el desplazamiento del usuario alrededor del sitio. Se recomienda utilizar window al añadir el elemento para que el scroll se aplique a todo el sitio.<br> 
+
+    Ver ejemplo en Javascript.
+    </p>
+
+    <h1>Ejemplo de uso del classList toggle</h1>
+    <p> Revisar ejemplo en javascript</p>
+    <button id="botton8">Cambiaremos color</button>
+    <div id="colorSobrepuesto"></div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
+

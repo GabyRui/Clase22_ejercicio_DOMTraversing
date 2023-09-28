@@ -1,0 +1,13 @@
+body{
+    margin: 40px;
+    padding: 0;
+    height: 600vh;
+}
+
+.colorSobrepuesto {
+    background-color: aquamarine;
+}
+
+.buttonColor {
+    background-color: gold;
+}
